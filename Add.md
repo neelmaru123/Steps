@@ -46,3 +46,14 @@ const [data, setData] = useState({ FacultyName: "" });
     })
   }
 ```
+## Step 3: Index.js file Routing.
+```
+      <BrowserRouter>
+        <Link to={'/Add'}></Link>
+        <Routes>
+          <Route path='/' element={<Contact />} />
+          <Route path="/:id" element={<FacById />} />
+          <Route path="/Add" element={<Add />} />
+        </Routes>
+      </BrowserRouter>
+```
