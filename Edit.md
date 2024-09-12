@@ -30,12 +30,12 @@ const [data, setData] = useState({});
         setData({ ...data, FacultyExp: e.target.value });
       }} />
       <br />
-      <input type="button" value="Add Faculty" onClick={sendData} />
+      <input type="button" value="Add Faculty" onClick={editData} />
 ```
 ## Step 3: Make a function edit  Data with API call.
 ```
     function editData(){
-      fetch("https://66b59acab5ae2d11eb6403aa.mockapi.io/Faculty/"+ param.id,{
+      fetch("API URL"+ id,{
         method:"PUT",
         body:JSON.stringify(data),
         headers:{
